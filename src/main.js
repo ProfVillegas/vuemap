@@ -3,10 +3,19 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import * as VueGoogleMaps from "vue2-google-maps";
+
 Vue.config.productionTip = false;
 
+Vue.use(VueGoogleMaps, {
+    load: {
+        key: "AIzaSyBBXZ3UYQJp0dg02brEUUaMWfvLrG01c6I",
+        libraries: "places"
+    }
+});
+
 new Vue({
-  router,
-  store,
-  render: (h) => h(App),
+    router,
+    store,
+    render: (h) => h(App),
 }).$mount("#app");
