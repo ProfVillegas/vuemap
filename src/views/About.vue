@@ -7,9 +7,8 @@
 <script>
 import AddMap from "../components/AddGoogleMap.vue";
 export default {
-  components:{
-    AddMap
-  }
-  
-}
+  components: {
+    AddMap,
+  },
+};
 </script>
